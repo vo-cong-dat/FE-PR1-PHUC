@@ -1,3 +1,160 @@
 header {
-  color: red;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+
+.wrapper {
+  max-width: 1400px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper .header-logo {
+  width: auto;
+  height: 64px;
+  padding: 13px 0;
+}
+
+.wrapper .navbar {
+  display: flex;
+  padding-right: 40px;
+  align-items: flex-end;
+  gap: 42px;
+}
+
+.navbar .nav-item {
+  height: 50%;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.50);
+  font-weight: 400;
+  text-transform: uppercase;
+  border-bottom: 2px solid transparent;
+}
+
+.navbar .nav-item:hover {
+  color: white;
+  border-color: #fff ;
+}
+
+.slice{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #19796a;
+  position: relative;
+}
+
+.slice .banner-item img{
+  width: 100%;
+}
+
+.slice .banner-item{
+  position: relative;
+}
+
+.dots {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  position: absolute;
+  bottom: 24px;
+  left: 120px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  position: relative;
+}
+
+.dot.active {
+  background-color: transparent;
+  border: 2px solid white;
+}
+
+/* Reponsive */
+
+/* Mobile (max-width: 639px) */
+@media (max-width: 639px) {
+  .wrapper .header-logo {
+   display: none;
+  }
+
+  .wrapper .navbar {
+    display: none;
+   }
+
+  .dot {
+    width: 8px;
+    height: 8px;
+  }
+
+  .dots {
+    bottom: 10px;
+  }
+}
+
+/* Tablet (min-width: 640px) */
+@media (min-width: 640px) {
+  .wrapper {
+    padding: 0 20px;
+  }
+
+  .wrapper .navbar {
+    gap: 24px;
+    padding-right: 20px;
+  }
+
+  .dots {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+/* Laptop (min-width: 1024px) */
+@media (min-width: 1024px) {
+  .wrapper {
+    max-width: 1200px;
+  }
+
+  .wrapper .navbar {
+    gap: 32px;
+  }
+
+  .slice .banner-item img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+  }
+
+  .dots {
+    bottom: 16px;
+  }
+}
+
+/* Desktop (min-width: 1440px) */
+@media (min-width: 1440px) {
+  .wrapper {
+    max-width: 1400px;
+  }
+
+  .wrapper .navbar {
+    gap: 42px;
+  }
+
+  .slice .banner-item img {
+    max-height: 600px;
+  }
 }
