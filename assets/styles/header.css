@@ -9,18 +9,42 @@ header {
   z-index: 2;
 }
 
-
 .wrapper {
   max-width: 1400px;
   width: 100%;
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 639px) {
+    padding: 0 16px;
+  }
 }
 
 .wrapper .header-logo {
   width: auto;
   height: 64px;
   padding: 13px 0;
+
+  @media (max-width: 639px) {
+    height: 31px;
+  }
+}
+
+.banner-item__pc {
+  @media (max-width: 639px) {
+    display: none;
+  }
+}
+
+.banner-item__pc {
+  @media (max-width: 639px) {
+    display: none;
+  }
+}
+
+.wrapper .header-logo img {
+  width: 100%;
+  height: 100%;
 }
 
 .wrapper .navbar {
@@ -28,12 +52,16 @@ header {
   padding-right: 40px;
   align-items: flex-end;
   gap: 42px;
+
+  @media (max-width: 639px) {
+    display: none;
+  }
 }
 
 .navbar .nav-item {
   height: 50%;
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.50);
+  color: rgba(255, 255, 255, 0.5);
   font-weight: 400;
   text-transform: uppercase;
   border-bottom: 2px solid transparent;
@@ -41,10 +69,10 @@ header {
 
 .navbar .nav-item:hover {
   color: white;
-  border-color: #fff ;
+  border-color: #fff;
 }
 
-.slice{
+.slice {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -52,11 +80,11 @@ header {
   position: relative;
 }
 
-.slice .banner-item img{
+.slice .banner-item img {
   width: 100%;
 }
 
-.slice .banner-item{
+.slice .banner-item {
   position: relative;
 }
 
@@ -82,79 +110,4 @@ header {
 .dot.active {
   background-color: transparent;
   border: 2px solid white;
-}
-
-/* Reponsive */
-
-/* Mobile (max-width: 639px) */
-@media (max-width: 639px) {
-  .wrapper .header-logo {
-   display: none;
-  }
-
-  .wrapper .navbar {
-    display: none;
-   }
-
-  .dot {
-    width: 8px;
-    height: 8px;
-  }
-
-  .dots {
-    bottom: 10px;
-  }
-}
-
-/* Tablet (min-width: 640px) */
-@media (min-width: 640px) {
-  .wrapper {
-    padding: 0 20px;
-  }
-
-  .wrapper .navbar {
-    gap: 24px;
-    padding-right: 20px;
-  }
-
-  .dots {
-    left: 50%;
-    transform: translateX(-50%);
-  }
-}
-
-/* Laptop (min-width: 1024px) */
-@media (min-width: 1024px) {
-  .wrapper {
-    max-width: 1200px;
-  }
-
-  .wrapper .navbar {
-    gap: 32px;
-  }
-
-  .slice .banner-item img {
-    width: 100%;
-    max-height: 500px;
-    object-fit: cover;
-  }
-
-  .dots {
-    bottom: 16px;
-  }
-}
-
-/* Desktop (min-width: 1440px) */
-@media (min-width: 1440px) {
-  .wrapper {
-    max-width: 1400px;
-  }
-
-  .wrapper .navbar {
-    gap: 42px;
-  }
-
-  .slice .banner-item img {
-    max-height: 600px;
-  }
 }
