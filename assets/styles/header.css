@@ -220,18 +220,32 @@ header {
   text-transform: uppercase;
 }
 
-.menucheckbox:checked~.menu-overlay {
+/* .menucheckbox:checked~.menu-overlay {
   opacity: 1;
   visibility: visible;
 }
 
 .menucheckbox:checked~.menu-drawer {
   display: block;
-}
+} */
+
+
 
 @media (max-width:639px) {
   .menu-toggle {
     display: block;
   }
+
+  .menu-overlay.show {
+    opacity: 1;
+    visibility: visible;
+    display: block;
+  }
+
+  .menu-drawer.show {
+    display: block;
+
+  }
+
 
 }
