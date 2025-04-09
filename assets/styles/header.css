@@ -110,8 +110,9 @@ header {
   position: relative;
 }
 
-.chicky-run{
+.chicky-run {
   display: none;
+
   @media (max-width:639px) {
     display: block;
     position: absolute;
@@ -120,7 +121,7 @@ header {
     bottom: 24px;
     left: 50%;
     color: #fff;
-    
+
   }
 }
 
@@ -133,8 +134,9 @@ header {
   position: absolute;
   bottom: 24px;
   left: 120px;
+
   @media (max-width:639px) {
-    bottom:95px;
+    bottom: 95px;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -169,11 +171,13 @@ header {
     color: #fff;
 
   }
-} 
+}
 
 .menu-drawer {
   display: none;
 }
+
+
 
 .menu-overlay {
   position: fixed;
@@ -186,6 +190,7 @@ header {
 }
 
 .menu-drawer {
+  display: none;
   position: absolute;
   top: 30px;
   right: 30px;
@@ -193,9 +198,10 @@ header {
   height: 200px;
   background-color: #fff;
   border-radius: 10px;
-  display: flex;
-  align-items: center;
+  /* display: flex;
+  align-items: center; */
   transition: 0.5s ease;
+  z-index: 11;
 }
 
 .menu-drawer nav ul {
@@ -204,9 +210,15 @@ header {
   text-decoration: none;
 }
 
+.menu-drawer nav ul li {
+  margin: 5px 0;
+  cursor: pointer;
+}
+
 .menu-drawer nav ul a {
   text-decoration: none;
   color: #333;
   text-transform: uppercase;
-} 
+}
+
 
