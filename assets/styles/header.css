@@ -1,5 +1,6 @@
 header {
   background-color: rgba(0, 0, 0, 0.6);
+ 
   display: flex;
   justify-content: center;
   position: fixed;
@@ -44,7 +45,7 @@ header {
 }
 
 .banner-item__mobile {
-  @media (min-width: 639px) {
+  @media (min-width: 640px) {
     display: none;
   }
 }
@@ -208,50 +209,4 @@ header {
   color: #333;
   text-transform: uppercase;
 } 
-
-/* .menucheckbox:checked~.menu-overlay {
-  @media (max-width:639px) {
-    .menu-toggle {
-      display: block;
-    }
-
-    .menu-overlay {
-      visibility: visible;
-
-    }
-
-  }
-} */
-
-/* .menucheckbox:checked~.menu-drawer {
-  @media (max-width:639px) {
-    .menu-toggle {
-      display: block;
-    }
-
-    .menu-drawer {
-      display: block;
-    }
-  }
-} */
-
-/* @media (max-width:639px) {
-  .menu-toggle{
-    display: block;
-  }
-  
-  .menucheckbox:checked~.menu-overlay {
-
-    display: block;
-    opacity: 1;
-    visibility: hidden;
-
-  }
-
-  .menucheckbox:checked~.menu-drawer {
-    .menu-drawer {
-      display: block;
-    }
-  }
-} */
 
