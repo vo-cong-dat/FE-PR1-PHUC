@@ -1,6 +1,6 @@
 header {
   background-color: rgba(0, 0, 0, 0.6);
- 
+
   display: flex;
   justify-content: center;
   position: fixed;
@@ -11,7 +11,6 @@ header {
 
   @media (max-width: 639px) {
     background-color: rgba(0, 0, 0, 0);
-
   }
 }
 
@@ -21,7 +20,8 @@ header {
   display: flex;
   justify-content: space-between;
 
-  @media (max-width: 639px) {}
+  @media (max-width: 639px) {
+  }
 }
 
 .wrapper .header-logo {
@@ -49,9 +49,6 @@ header {
     display: none;
   }
 }
-
-
-
 
 /* .banner-item__pc {
   @media (max-width: 639px) {
@@ -96,9 +93,8 @@ header {
   background-color: #19796a;
   position: relative;
 
-  @media (max-width:639px) {
+  @media (max-width: 639px) {
     background-color: #fff;
-
   }
 }
 
@@ -113,7 +109,7 @@ header {
 .chicky-run {
   display: none;
 
-  @media (max-width:639px) {
+  @media (max-width: 639px) {
     display: block;
     position: absolute;
     transform: translateX(-50%);
@@ -121,7 +117,6 @@ header {
     bottom: 24px;
     left: 50%;
     color: #fff;
-
   }
 }
 
@@ -135,7 +130,7 @@ header {
   bottom: 24px;
   left: 120px;
 
-  @media (max-width:639px) {
+  @media (max-width: 639px) {
     bottom: 95px;
     left: 50%;
     transform: translateX(-50%);
@@ -155,29 +150,23 @@ header {
   border: 2px solid white;
 }
 
-
 /* Menu toggle */
 .menu-toggle {
   display: none;
 }
 
-
-
 .toggle-menu {
   display: none;
 
-  @media (max-width:639px) {
+  @media (max-width: 639px) {
     display: block;
     color: #fff;
-
   }
 }
 
 .menu-drawer {
   display: none;
 }
-
-
 
 .menu-overlay {
   position: fixed;
@@ -220,5 +209,3 @@ header {
   color: #333;
   text-transform: uppercase;
 }
-
-

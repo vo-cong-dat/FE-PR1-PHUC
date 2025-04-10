@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+      integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Etech LandingPage</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./assets/styles/main.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
-    integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <title>Etech LandingPage</title>
-</head>
-
-<body>
-  <div class="container">
+  <body>
     <!-- Header Area -->
     <header class="header">
       <div class="wrapper">
         <div class="header-logo">
           <div>
-            <img src="assets/images/logo_etech_white.png" alt="">
+            <img src="assets/images/logo_etech_white.png" alt="" />
           </div>
           <!-- Menu toggle -->
           <div class="menu-toggle">
-            <input type="checkbox" name="" id="menucheckbox" class="menucheckbox" hidden>
+            <input type="checkbox" name="" id="menucheckbox" class="menucheckbox" hidden />
             <!-- Overlay -->
             <label for="menucheckbox" class="menu-overlay"></label>
             <!-- Menu Drawer -->
@@ -43,7 +45,6 @@
           <label for="menucheckbox" class="toggle-menu">
             <i class="fa-solid fa-bars"></i>
           </label>
-
         </div>
 
         <nav class="navbar">
@@ -55,7 +56,6 @@
           <a href="#" class="nav-item">Events</a>
           <a href="#" class="nav-item">Partners</a>
         </nav>
-
       </div>
     </header>
 
@@ -63,13 +63,22 @@
       <!-- Slice -->
       <div class="slice">
         <div class="wrapper banner-item">
-          <img src="https://www.pgsoft.com/uploads/Games/Images/baf9142e-3fe5-4de8-8a21-44579f07b20c.jpg" alt="banner"
-            class="banner-item__pc">
-          <img src="assets/images/game_chicken_escape.png" alt="banner" class="banner-item__mobile">
+          <img
+            src="https://www.pgsoft.com/uploads/Games/Images/baf9142e-3fe5-4de8-8a21-44579f07b20c.jpg"
+            alt="banner"
+            class="banner-item__pc"
+          />
+          <img
+            src="assets/images/game_chicken_escape.png"
+            alt="banner"
+            class="banner-item__mobile"
+          />
           <!--Overlay -->
           <div class="chicky-run">
             <p>Chicky Run</p>
-            <p>Game Detail <span><i class='fas fa-arrow-right'></i></span></p>
+            <p>
+              Game Detail <span><i class="fas fa-arrow-right"></i></span>
+            </p>
           </div>
           <div class="dots">
             <div class="dot"></div>
@@ -82,260 +91,264 @@
       </div>
 
       <!-- Content Area -->
-      <div class="container-content">
-        <!-- Sidebar -->
-        <aside>
-
-
-          <div class="sidebar">
-            <div class="search-box">
-              <img src="assets/images/icon_search.png" alt="">
-
-              <input type="text" placeholder="Search...">
+      <div class="main-inner">
+        <div class="wrapper container-content">
+          <!-- Sidebar -->
+          <aside>
+            <div class="sidebar">
+              <div class="search-box">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 20 20"
+                  class="search-icon"
+                >
+                  <g clip-path="url(#search-icon_svg__a)">
+                    <g clip-path="url(#search-icon_svg__b)" opacity="0.2">
+                      <g clip-path="url(#search-icon_svg__c)">
+                        <path
+                          stroke="#000"
+                          stroke-width="3"
+                          d="M11.768 11.768A5.5 5.5 0 1 0 3.99 3.99a5.5 5.5 0 0 0 7.778 7.778Z"
+                        ></path>
+                        <path
+                          fill="#000"
+                          d="M13.536 11.414a1.5 1.5 0 0 0-2.122 2.122l3.536 3.535a1.5 1.5 0 1 0 2.121-2.121z"
+                        ></path>
+                      </g>
+                    </g>
+                  </g>
+                  <defs>
+                    <clipPath id="search-icon_svg__a">
+                      <path fill="#fff" d="M0 0h20v20H0z"></path>
+                    </clipPath>
+                    <clipPath id="search-icon_svg__b">
+                      <path fill="#fff" d="M0 0h20v20H0z"></path>
+                    </clipPath>
+                    <clipPath id="search-icon_svg__c">
+                      <path fill="#fff" d="M0 0h20v20H0z"></path>
+                    </clipPath>
+                  </defs>
+                </svg>
+                <input type="text" placeholder="Search..." />
+              </div>
+              <ul class="menu">
+                <li class="menu-item">
+                  <div>
+                    <img src="assets/images/icon_homepage.png" alt="" />
+                  </div>
+                  <p>Games Home</p>
+                </li>
+                <li class="menu-item">
+                  <div>
+                    <img src="assets/images/icon_timeline.png" alt="icon-bag" />
+                  </div>
+                  <p>Timeline</p>
+                </li>
+                <li class="menu-item">
+                  <div>
+                    <img src="assets/images/icon_all_games.png" alt="icon-allgame" />
+                  </div>
+                  <p>All Games</p>
+                </li>
+              </ul>
             </div>
-            <ul class="menu">
-              <li class="menu-item">
 
-                <div>
-                  <img src="assets/images/icon_homepage.png" alt="" />
+            <!-- display XS mobile -->
+            <div class="navbar-mobile">
+              <ul>
+                <li>
+                  <a href="#">
+                    <i class="fas fa-home"></i>
+                    <span>HOME</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fas fa-archive"></i>
+                    <span>TIMELINE</span>
+                  </a>
+                </li>
+                <li class="active">
+                  <a href="#">
+                    <i class="fas fa-th"></i>
+                    <span><b>ALL GAMES</b></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fas fa-search"></i>
+                    <span>SEARCH</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fas fa-filter"></i>
+                    <span>FILTER</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </aside>
 
+          <!-- Content -->
+          <div class="content">
+            <section class="game-hot">
+              <div class="game-title">
+                <p>Hot Game</p>
+                <div class="icon-arrow">
+                  <div class="arrow-left">
+                    <i class="fas fa-angle-left"></i>
+                  </div>
+                  <div class="arrow-right">
+                    <i class="fas fa-angle-right"></i>
+                  </div>
+
+                  <!-- select display xs mobile -->
+                  <div class="select-mobile">
+                    <button>
+                      <span class="release-text">Release Date</span>
+                      <span class="az-text">AZ</span>
+                      <i class="fas fa-chevron-down"></i>
+                    </button>
+                  </div>
                 </div>
-                <p>Games Home</p>
-              </li>
-              <li class="menu-item">
+              </div>
 
-                <div>
-                  <img src="assets/images/icon_timeline.png" alt="icon-bag" />
-
+              <div class="game-hot-grid">
+                <div class="game-card">
+                  <img src="assets/images/banner_home.png" alt="" />
+                  <div class="game-info">
+                    <div class="img-small">
+                      <img src="assets/images/icon_slot_light.png" alt="" />
+                    </div>
+                    <div class="game-name">
+                      <h4>Mahjong Ways</h4>
+                      <p>
+                        4TECH™ has just launched their very first Mahjong inspired slot machine gam…
+                      </p>
+                    </div>
+                    <div class="game-view">
+                      <button>View</button>
+                    </div>
+                  </div>
                 </div>
-                <p>Timeline</p>
-              </li>
-              <li class="menu-item">
 
-                <div>
-                  <img src="assets/images/icon_all_games.png" alt="icon-allgame" />
-
-               
+                <div class="game-card">
+                  <img src="assets/images/banner_worldjackpot.png" alt="home-banner" />
+                  <div class="game-info">
+                    <div class="img-small">
+                      <img src="assets/images/icon_slot_mariachi.png" alt="" />
+                    </div>
+                    <div class="game-name">
+                      <h4>Wild Bandito</h4>
+                      <p>
+                        Águila which means ‘The Eagle’ is a three- person Mexican bandit team that
+                        is activ…
+                      </p>
+                    </div>
+                    <div class="game-view">
+                      <button>View</button>
+                    </div>
+                  </div>
                 </div>
-                <p>All Games</p>
-              </li>
-            </ul>
+                <!-- banner display xs mobile -->
+                <div class="game-card-mobile">
+                  <img src="assets/images/bg_flower_blur.png" alt="home-banner" />
+                  <div class="game-info-mobile">
+                    <div class="img-small-mobile">
+                      <img src="assets/images/icon_slot_flowe.png" alt="" />
+                    </div>
+                    <div class="game-name-mobile">
+                      <h4>Tree Of Fortune</h4>
+                      <p>Legend has it that a farmer was granted a seed from a deity.</p>
+                    </div>
+                  </div>
+                  <div class="game-des">
+                    <div class="info-item">
+                      <h5>MEDIUM</h5>
+                      <p>Volatility</p>
+                    </div>
+                    <div class="info-item">
+                      <h5>95.01%</h5>
+                      <p>RTP</p>
+                    </div>
+                    <div class="info-item">
+                      <h5>x5000</h5>
+                      <p>Maximum Win</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
 
+            <section class="categoty">
+              <div class="game-title">
+                <p>Hottest Category</p>
+                <div class="icon-arrow">
+                  <div class="arrow-left">
+                    <i class="fas fa-angle-left"></i>
+                  </div>
+                  <div class="arrow-right">
+                    <i class="fas fa-angle-right"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hottest-category">
+                <div class="category-card">
+                  <div class="category-grid">
+                    <div class="category-info-music">
+                      <img src="assets/images/icon_music_note.png" alt="" />
+                      <div class="category-title">Music</div>
+                      <p>Music makes everything better, and these games will grove to it!</p>
+                    </div>
+                    <img src="assets/images/icon_slot_flowe.png" class="small-game" />
+                    <img src="assets/images/icon_slot_dragon.png" class="small-game" />
+                    <img src="assets/images/icon_slot_god.png" class="small-game" />
+                    <img src="assets/images/icon_slot_hand.png" class="small-game" />
+                    <img src="assets/images/icon_music_hiphop_panda.png" class="big-game" />
+                  </div>
+                </div>
+
+                <div class="category-card">
+                  <div class="category-grid">
+                    <div class="category-info-pocker">
+                      <img src="assets/images/icon_poker_card.png" alt="" />
+                      <div class="category-title">Table Games</div>
+                      <p>The classic table games for the gentlemen and ladies.</p>
+                    </div>
+                    <img src="assets/images/icon_slot_flowe.png" class="small-game" />
+                    <img src="assets/images/icon_slot_dragon.png" class="small-game" />
+                    <img src="assets/images/icon_slot_god.png" class="small-game" />
+                    <img src="assets/images/icon_slot_hand.png" class="small-game" />
+                    <img src="assets/images/icon_poker_european.png" class="big-game" />
+                  </div>
+                </div>
+
+                <!-- Dots and button display xs mobile -->
+                <div class="slice-mobile">
+                  <div class="dots-mobile">
+                    <div class="dot-item"></div>
+                    <div class="dot-item"></div>
+                    <div class="dot-item active"></div>
+                    <div class="dot-item"></div>
+                    <div class="dot-item"></div>
+                  </div>
+
+                  <div class="button-tag">
+                    <button>
+                      Learn More
+                      <span><i class="fa fa-plus"></i></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </section>
           </div>
-
-          <!-- display XS mobile -->
-          <div class="navbar-mobile">
-            <ul>
-              <li>
-                <a href="#">
-                  <i class="fas fa-home"></i>
-                  <span>HOME</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fas fa-archive"></i>
-                  <span>TIMELINE</span>
-                </a>
-              </li>
-              <li class="active">
-                <a href="#">
-                  <i class="fas fa-th"></i>
-                  <span><b>ALL GAMES</b></span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fas fa-search"></i>
-                  <span>SEARCH</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fas fa-filter"></i>
-                  <span>FILTER</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </aside>
-
-        <!-- Content -->
-        <div class="content">
-
-          <section class="game-hot">
-
-            <div class="game-title">
-              <p>Hot Game</p>
-              <div class="icon-arrow">
-                <div class="arrow-left">
-                  <i class="fas fa-angle-left"></i>
-                </div>
-                <div class="arrow-right">
-                  <i class="fas fa-angle-right"></i>
-                </div>
-
-                <!-- select display xs mobile -->
-                <div class="select-mobile">
-                  <button>
-                    <span class="release-text">Release Date</span>
-                    <span class="az-text">AZ</span>
-                    <i class="fas fa-chevron-down"></i>
-                  </button>
-
-                </div>
-              </div>
-            </div>
-
-
-            <div class="game-hot-grid">
-
-              <div class="game-card">
-                <img src="assets/images/banner_home.png" alt="">
-                <div class="game-info">
-                  <div class="img-small">
-                    <img src="assets/images/icon_slot_light.png" alt="" />
-                  </div>
-                  <div class="game-name">
-                    <h4>Mahjong Ways</h4>
-                    <p>
-                      4TECH™ has just launched their very first Mahjong inspired slot machine gam…
-                    </p>
-                  </div>
-                  <div class="game-view">
-                    <button>View</button>
-                  </div>
-                </div>
-              </div>
-
-              <div class="game-card">
-                <img src="assets/images/banner_worldjackpot.png" alt="home-banner" />
-                <div class="game-info">
-                  <div class="img-small">
-                    <img src="assets/images/icon_slot_mariachi.png" alt="" />
-                  </div>
-                  <div class="game-name">
-                    <h4>Wild Bandito</h4>
-                    <p>
-                      Águila which means ‘The Eagle’ is a three- person Mexican bandit team that
-                      is activ…
-                    </p>
-                  </div>
-                  <div class="game-view">
-                    <button>View</button>
-                  </div>
-                </div>
-              </div>
-              <!-- banner display xs mobile -->
-              <div class="game-card-mobile">
-                <img src="assets/images/bg_flower_blur.png" alt="home-banner" />
-                <div class="game-info-mobile">
-                  <div class="img-small-mobile">
-                    <img src="assets/images/icon_slot_flowe.png" alt="" />
-                  </div>
-                  <div class="game-name-mobile">
-                    <h4>Tree Of Fortune</h4>
-                    <p>
-                      Legend has it that a farmer was
-                      granted a seed from a deity.
-                    </p>
-                  </div>
-
-                </div>
-                <div class="game-des">
-                  <div class="info-item">
-                    <h5>MEDIUM</h5>
-                    <p>Volatility</p>
-                  </div>
-                  <div class="info-item">
-                    <h5>95.01%</h5>
-                    <p>RTP</p>
-                  </div>
-                  <div class="info-item">
-                    <h5>x5000</h5>
-                    <p>Maximum Win</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-          </section>
-
-          <section class="categoty">
-
-            <div class="game-title">
-              <p>Hottest Category</p>
-              <div class="icon-arrow">
-                <div class="arrow-left">
-                  <i class="fas fa-angle-left"></i>
-                </div>
-                <div class="arrow-right">
-                  <i class="fas fa-angle-right"></i>
-                </div>
-              </div>
-            </div>
-
-            <div class="hottest-category">
-
-              <div class="category-card">
-                <div class="category-grid">
-                  <div class="category-info-music">
-                    <img src="assets/images/icon_music_note.png" alt="" />
-                    <div class="category-title">Music</div>
-                    <p>Music makes everything better, and these games will grove to it!</p>
-                  </div>
-                  <img src="assets/images/icon_slot_flowe.png" class="small-game" />
-                  <img src="assets/images/icon_slot_dragon.png" class="small-game" />
-                  <img src="assets/images/icon_slot_god.png" class="small-game" />
-                  <img src="assets/images/icon_slot_hand.png" class="small-game" />
-                  <img src="assets/images/icon_music_hiphop_panda.png" class="big-game" />
-                </div>
-              </div>
-
-              <div class="category-card">
-                <div class="category-grid">
-                  <div class="category-info-pocker">
-                    <img src="assets/images/icon_poker_card.png" alt="" />
-                    <div class="category-title">Table Games</div>
-                    <p>The classic table games for the gentlemen and ladies.</p>
-                  </div>
-                  <img src="assets/images/icon_slot_flowe.png" class="small-game" />
-                  <img src="assets/images/icon_slot_dragon.png" class="small-game" />
-                  <img src="assets/images/icon_slot_god.png" class="small-game" />
-                  <img src="assets/images/icon_slot_hand.png" class="small-game" />
-                  <img src="assets/images/icon_poker_european.png" class="big-game" />
-                </div>
-              </div>
-
-              <!-- Dots and button display xs mobile -->
-              <div class="slice-mobile">
-                <div class="dots-mobile">
-                  <div class="dot-item"></div>
-                  <div class="dot-item"></div>
-                  <div class="dot-item active"></div>
-                  <div class="dot-item"></div>
-                  <div class="dot-item"></div>
-                </div>
-
-                <div class="button-tag">
-                  <button>Learn More
-                    <span><i class="fa fa-plus"></i></span>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </section>
         </div>
       </div>
-
-
     </main>
-
-
-
-  </div>
-</body>
-<script src="assets/scripts/main.js"></script>
-
+  </body>
+  <script src="assets/scripts/main.js"></script>
 </html>
