@@ -265,7 +265,7 @@
 
   @media (max-width: 639px) {
     display: block;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 10px;
     background: #c48f03;
   }
 }
@@ -303,9 +303,7 @@
 }
 
 .game-des .info-item p {
-  font-family: 'PingFang SC';
   font-size: 12px;
-  font-style: normal;
   font-weight: 400;
   line-height: 12px;
   opacity: 0.5;
@@ -329,6 +327,10 @@
   flex: 1;
 }
 
+.category-info-music >*,.category-info-pocker > * {
+  margin: 10px;
+}
+
 .category-card:nth-child(2) {
   @media (max-width: 639px) {
     display: none;
@@ -347,14 +349,12 @@
   grid-row: 1/3;
   grid-column: 1/3;
   background-color: #5c6eff;
-  padding: 20px 32px 63px 20px;
   border-radius: 20px;
   color: white;
 }
 
 .category-title {
   color: #fff;
-  font-family: 'PingFang SC';
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
@@ -364,9 +364,7 @@
 .category-info-music p,
 .category-info-pocker p {
   color: #fff;
-  font-family: 'PingFang SC';
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
   line-height: 20px;
 }

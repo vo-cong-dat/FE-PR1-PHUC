@@ -1,3 +1,5 @@
+console.log("Da bam");
+
 const toggleBtn = document.querySelector('.toggle-menu');
 
 const overlay = document.querySelector('.menu-overlay');
