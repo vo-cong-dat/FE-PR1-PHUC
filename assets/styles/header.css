@@ -1,5 +1,6 @@
 header {
   background-color: rgba(0, 0, 0, 0.6);
+
   display: flex;
   justify-content: center;
   position: fixed;
@@ -10,7 +11,6 @@ header {
 
   @media (max-width: 639px) {
     background-color: rgba(0, 0, 0, 0);
-
   }
 }
 
@@ -20,7 +20,8 @@ header {
   display: flex;
   justify-content: space-between;
 
-  @media (max-width: 639px) {}
+  @media (max-width: 639px) {
+  }
 }
 
 .wrapper .header-logo {
@@ -44,19 +45,11 @@ header {
 }
 
 .banner-item__mobile {
-  @media (min-width: 639px) {
+  @media (min-width: 640px) {
     display: none;
   }
 }
 
-
-
-
-/* .banner-item__pc {
-  @media (max-width: 639px) {
-    display: none;
-  }
-} */
 
 .wrapper .header-logo img {
   width: 100%;
@@ -95,9 +88,8 @@ header {
   background-color: #19796a;
   position: relative;
 
-  @media (max-width:639px) {
+  @media (max-width: 639px) {
     background-color: #fff;
-
   }
 }
 
@@ -112,7 +104,7 @@ header {
 .chicky-run {
   display: none;
 
-  @media (max-width:639px) {
+  @media (max-width: 639px) {
     display: block;
     position: absolute;
     transform: translateX(-50%);
@@ -120,7 +112,6 @@ header {
     bottom: 24px;
     left: 50%;
     color: #fff;
-
   }
 }
 
@@ -134,7 +125,7 @@ header {
   bottom: 24px;
   left: 120px;
 
-  @media (max-width:639px) {
+  @media (max-width: 639px) {
     bottom: 95px;
     left: 50%;
     transform: translateX(-50%);
@@ -154,29 +145,23 @@ header {
   border: 2px solid white;
 }
 
-
 /* Menu toggle */
 .menu-toggle {
   display: none;
 }
 
-
-
 .toggle-menu {
   display: none;
 
-  @media (max-width:639px) {
+  @media (max-width: 639px) {
     display: block;
     color: #fff;
-
   }
 }
 
 .menu-drawer {
   display: none;
 }
-
-
 
 .menu-overlay {
   position: fixed;
@@ -197,8 +182,6 @@ header {
   height: 200px;
   background-color: #fff;
   border-radius: 10px;
-  /* display: flex;
-  align-items: center; */
   transition: 0.5s ease;
   z-index: 11;
 }
@@ -219,17 +202,6 @@ header {
   color: #333;
   text-transform: uppercase;
 }
-
-/* .menucheckbox:checked~.menu-overlay {
-  opacity: 1;
-  visibility: visible;
-}
-
-.menucheckbox:checked~.menu-drawer {
-  display: block;
-} */
-
-
 
 @media (max-width:639px) {
   .menu-toggle {
