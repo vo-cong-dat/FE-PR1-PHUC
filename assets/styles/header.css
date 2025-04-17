@@ -1,6 +1,5 @@
 header {
   background-color: rgba(0, 0, 0, 0.6);
-
   display: flex;
   justify-content: center;
   position: fixed;
@@ -19,9 +18,6 @@ header {
   width: 100%;
   display: flex;
   justify-content: space-between;
-
-  @media (max-width: 639px) {
-  }
 }
 
 .wrapper .header-logo {
@@ -49,7 +45,6 @@ header {
     display: none;
   }
 }
-
 
 .wrapper .header-logo img {
   width: 100%;
@@ -203,7 +198,7 @@ header {
   text-transform: uppercase;
 }
 
-@media (max-width:639px) {
+@media (max-width: 639px) {
   .menu-toggle {
     display: block;
   }
@@ -216,8 +211,5 @@ header {
 
   .menu-drawer.show {
     display: block;
-
   }
-
-
 }

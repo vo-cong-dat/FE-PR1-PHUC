@@ -327,7 +327,8 @@
   flex: 1;
 }
 
-.category-info-music >*,.category-info-pocker > * {
+.category-info-music > *,
+.category-info-pocker > * {
   margin: 10px;
 }
 
